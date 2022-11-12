@@ -38,7 +38,7 @@ public final class ToastView: UIView {
     // MARK: Public
     
     public let toastViewModel: ToastViewModel
-    public weak var delegate: ToastViewDelegate?
+    public var delegate: ToastViewDelegate?
     
     // MARK: Private
 
