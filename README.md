@@ -9,7 +9,7 @@ Hi Welcome to Toaster!
 import Toaster
 ```
 
-Toaster is a SPM Package that is located under Packages/Toaster... Hope you enjoy!
+Toaster is a SPM Package that is located under `Packages/Toaster`... Hope you enjoy!
 
 # Use Case 1 - Simple Toast No Auto Dismiss
 
