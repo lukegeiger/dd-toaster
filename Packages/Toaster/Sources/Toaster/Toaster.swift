@@ -22,6 +22,7 @@ public class Toaster {
     static private let ToasterAnimationDelay = 0.0
     static private let ToasterAnimationSpringDamping = 0.60
     static private let ToasterAnimationVelocity = 1.0
+    static private let toasterToastViewDelegateImpl = ToasterToastViewDelegateImpl() // Concrete implementation of ToastViewDelegate
 }
 
 //MARK: Toaster Public Implementation
@@ -129,7 +130,7 @@ extension Toaster {
     private static func createToastView(with toastViewModel: ToastViewModel,
                                         in view:UIView) -> ToastView {
         let toastView = ToastView(toastViewModel: toastViewModel)
-        toastView.delegate = ToasterToastViewDelegateImpl()
+        toastView.delegate = toasterToastViewDelegateImpl
         toastView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(toastView)
         return toastView
