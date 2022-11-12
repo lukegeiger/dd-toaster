@@ -86,7 +86,7 @@ Note the ToastViewModel has room for Accessibility labels. These strings get ass
 
 # Dark Mode
 
-Note the ToastViewModel has room for Accessibility labels. These strings get assigned to their respective views in ToasterView
+Toaster supports Dark & Light mode! 
 
 # Demo
 
