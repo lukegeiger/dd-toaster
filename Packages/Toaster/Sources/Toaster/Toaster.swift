@@ -158,12 +158,12 @@ extension Toaster {
     }
 }
 
-// MARK: Toaster FilePrivate Implementation
+// MARK: Toaster Animation Implementation
 
 extension Toaster {
         
     /**
-     Animates ToastView inside the view provided. Note, you can use this function to animate in our out. Note this function is not responsible for adding or removing the toastView parameter  to screen.
+     Animates ToastView inside the view provided. Note, you can use this function to animate in our out.
      
      - Parameter toastView: The ToastView to animate.
      - Parameter direction: The direction to animate.
@@ -178,6 +178,8 @@ extension Toaster {
                                 duration: TimeInterval,
                                 type: AnimationType,
                                 onCompletion:(()  -> Void)?) {
+        
+        // Here we are determining the right constraint, as well as constant value, to animate on toastView based on the desired parameters of the animation. This will return nil and the animation won't run if the view is no longer on screen (thus not finding a constraint).
         guard let animationTuple = constraintToAnimate(goingInDirection: direction,
                                                        type: type,
                                                        toastView: toastView) else {
