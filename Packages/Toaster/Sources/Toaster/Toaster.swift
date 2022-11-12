@@ -165,11 +165,11 @@ extension Toaster {
     /**
      Animates ToastView inside the view provided. Note, you can use this function to animate in our out. Note this function is not responsible for adding or removing the toastView parameter  to screen.
      
-     - Parameter toastView: The person being greeted.
+     - Parameter toastView: The ToastView to animate.
      - Parameter direction: The direction to animate.
-     - Parameter view: The person being greeted.
-     - Parameter duration: The person being greeted.
-     - Parameter type: The person being greeted.
+     - Parameter view: The view to animate in.
+     - Parameter duration: The duration of the animation.
+     - Parameter type: The type of animation, see AnimationType.
      - Parameter onCompletion: A completion block for when the operation is completed.
      */
     private static func animate(toastView: ToastView,
