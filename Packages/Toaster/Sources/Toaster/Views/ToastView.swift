@@ -44,7 +44,7 @@ public final class ToastView: UIView {
 
     private let titleLabel = UILabel(frame: .zero)
     private let messageLabel = UILabel(frame: .zero)
-    private let button = UIButton(type: .custom)
+    private let button = UIButton(type: .system)
     private let iconImageView = UIImageView(frame: .zero)
     private let rootContainerStack = UIStackView(frame: .zero)
     private let messageTitleLabelStack = UIStackView(frame: .zero)
